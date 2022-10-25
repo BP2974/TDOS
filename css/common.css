@@ -1,34 +1,51 @@
-body {max-width: 1920px; margin: 0 auto;}
+body {max-width: 1920px; margin: 0;}
 a {color: black;} 
 a:link {color: black;}
 a:hover {color: black;}
 a:visited {color: black;}
 a:active {color: black;}
+ 
+.clear {clear: both;}
 
-.blind {display: none !important;} 
-.inner {padding: 20px; max-width: 1402px; margin: 0 auto;}
-.clear {content: ""; clear: both; display: table;}
-
+body{
+    transition: all 0.5s;
+}
 header h1{
     float: left;
     margin: 0px 0px 0px 50px;
+    position: fixed;
+    background: white;
+
 }
 header img{
     margin: 5px 15px;
-    width: 90px;
+    height: 300px;
+    transition: all 0.5s;
+}
+.menu{
+    width: 100vw;
 }
 nav ul{
     float: right;
-    padding: 0px;
-    margin-right: 50px;
 }
 nav li{
+    width: calc(25%);
+    height: 500px;
     list-style: none;
     float: left;
-    padding-right: 20px;
-    margin-top: 10px;
-    margin-right: 20px;
-    border-right: solid 2px #ffcd00;;
+    transition: all 0.5s;
+}
+nav li:nth-child(1){
+    background: #E4004E;
+}
+nav li:nth-child(2){
+    background: #EF7508;
+}
+nav li:nth-child(3){
+    background: #FCCC00;
+}
+nav li:nth-child(4){
+    background: #008950;
 }
 nav li:last-child{
     border-right: none;
@@ -49,22 +66,22 @@ footer{
 footer h2{
     color: #ffcd00;
 }
-.footer{
-    margin: 0px 50px;
+footer{
+    padding: 20px 0;
 }
 .footer_content{
-    width: calc(33% - 120px);
     margin: 20px 60px;
-    float: left;
+    display: flex;
+    justify-content: space-between;
 }
-footer img{
-    width: 80px;
+.site ul{
+    margin: 10px 60px;
+    display: flex;
+    justify-content: space-between;
 }
-footer h2{
-    margin-top: 15px;
-}
-#img_h2{
-    margin: 0px;
+.footer_logo img{
+    float: right;
+    width: 30%;
 }
 footer a{
     color: gray;
@@ -73,22 +90,6 @@ footer a{
 footer a:hover{
     color: #ffcd00;
 }
-footer ul{
-    padding-left: 18px;
-    margin: 0px;
-}
-footer li{
-    margin: 10px 0px;
-    list-style: circle;
-}
-footer h3{
-    margin: 10px 0px;
-}
-.FC{
-    margin-top: 30px;
-}
-footer dd{
-    margin: 5px 0px;
-    font-size: 12px;
-    color: gray;
+.copy{
+    text-align: center;
 }
