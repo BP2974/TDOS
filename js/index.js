@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var s = $(window).scrollTop();
         console.log(s);
-        if(s == 100){
+        if(s >= 100){
         $('h1 img').css('height', '100px')
             
         }
