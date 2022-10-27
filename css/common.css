@@ -1,4 +1,4 @@
-body {max-width: 1920px; margin: 0;}
+body {margin: 0; padding: 0;}
 a {color: black;} 
 a:link {color: black;}
 a:hover {color: black;}
@@ -22,52 +22,13 @@ header img{
     height: 300px;
     transition: all 0.5s;
 }
-.menu{
-    width: 100vw;
-}
-nav ul{
-    float: right;
-}
-nav li{
-    width: calc(25%);
-    height: 500px;
-    list-style: none;
-    float: left;
-    transition: all 0.5s;
-}
-nav li:nth-child(1){
-    background: #E4004E;
-}
-nav li:nth-child(2){
-    background: #EF7508;
-}
-nav li:nth-child(3){
-    background: #FCCC00;
-}
-nav li:nth-child(4){
-    background: #008950;
-}
-nav li:last-child{
-    border-right: none;
-    margin-right: 0px;
-}
-nav a{
-    color: gray;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #ffcd00;
-    text-decoration: underline;
-}
 footer{
     background-color: black;
     color: white;
+    padding: 20px 0;
 }
 footer h2{
     color: #ffcd00;
-}
-footer{
-    padding: 20px 0;
 }
 .footer_content{
     margin: 20px 60px;
@@ -91,5 +52,6 @@ footer a:hover{
     color: #ffcd00;
 }
 .copy{
+    font-size: 12px;
     text-align: center;
 }
