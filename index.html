@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="개러지 록 밴드 투 데이 올드 스니커즈" />
     <!-- 프로젝트 설명 meta -->
     <meta name="description" content="개러지 록 밴드 투 데이 올드 스니커즈">
-    <meta name='keywords' content='소통, 부모, 자녀, 이해, 공감, 커뮤니티, 익명, 연결고리' />
+    <meta name='keywords' content='' />
     <!-- 파비콘 -->
     <link rel="icon" href="" sizes="16x16" />
     <link rel="icon" href="" sizes="32x32" />
@@ -31,19 +31,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./js/jquery.fadethis.js"></script>
 
     <title>투 데이 올드 스니커즈</title>
 </head>
 
 <body>
+    <div class="logo_back"></div>
     <header>
-        <h1><a><img src="./img/logo_black.png" /></a></h1>
+        <h1><a href="#title">
+            <img class="logo_b" src="./img/logo_black.png"/>
+            <img class="logo_y" src="./img/logo_yellow.png"/>
+        </a></h1>
     </header>
 
     <section id="title">
         <img src="./img/title.png" />
     </section>
+
+    <aside id="music">
+        <button class="btn_menu"><span></span><span></span><span></span></button>
+        <nav class="menu">
+            <ol>
+                <li class="menu1">
+                    <img src="./img/album1.jpg">
+                    <ul class="album">
+                        <li><h3>사기꾼</h3></li>
+                        <li>사기꾼</li>
+                        <li>그래 빨간달이 떴구나 아무것도 변하지 않는다</li>
+                        <li>권태</li>
+                        <li>캐딜락</li>
+                    </ul>
+                </li>
+                  
+                <li class="menu2">
+                    <img src="./img/album2.png">
+                    <ul class="album">
+                        <li><h3>신발장</h3></li>
+                        <li>한강</li>
+                        <li>종이가방</li>
+                        <li>그래 빨간달이 떴구나 아무것도 변하지 않는다</li>
+                        <li>재규어</li>
+                        <li>사기꾼</li>
+                        <li>권태</li>
+                        <li>착장</li>
+                        <li>주인공</li>
+                        <li>산산조각</li>
+                        <li>저녁</li>
+                        <li>춤을추게, 여전하게 (Dear Sally)</li>
+                    </ul>
+                </li>
+                  
+                <li class="menu3">
+                    <img src="./img/album3.jpg">
+                    <ul class="album">
+                        <li><h3>여기서 빛난다</h3></li>
+                        <li>그림자</li>
+                        <li>오직 그곳에서만 빛난다</li>
+                        <li>끈적한 바닥</li>
+                        <li>제자리에 있는건</li>
+                        <li>Get A Grip!</li>
+                    </ul>
+                </li>
+                  
+                <li class="menu4">
+                    <img src="./img/album4.jpg">
+                    <ul class="album">
+                        <li><h3>로봇-맨</h3></li>
+                        <li>로봇-맨</li>
+                    </ul>
+                    
+                </li>
+            </ol>
+        </nav>
+    </aside>
 
     <section id="info">
         <h2>TWO DAY OLD SNEAKERS</h2>
@@ -98,6 +158,11 @@
         </article>
     </section>
 
+    <section id="typo">
+        <h2 class="hide">We can go anywhere. But Light shines only there</h2>
+        <img src="./img/typo.png">
+    </section>
+
     <section id="members">
         <h2>MEMBERS</h2>
         <ul class="profile_list">
@@ -132,71 +197,19 @@
         </ul>
     </section>
 
-    <section id="music">
-        <h2>MUSIC</h2>
-        <nav class="menu">
-            <ol>
-                <li class="menu1">
-                    <h3>사기꾼</h3>
-                    <img src="./img/album1.jpg">
-                    <ul class="album">
-                        <li>사기꾼</li>
-                        <li>그래 빨간달이 떴구나 아무것도 변하지 않는다</li>
-                        <li>권태</li>
-                        <li>캐딜락</li>
-                    </ul>
-                </li>
-                  
-                <li class="menu2">
-                    <h3>신발장</h3>
-                    <img src="./img/album2.png">
-                    <ul class="album">
-                        <li>한강</li>
-                        <li>종이가방</li>
-                        <li>그래 빨간달이 떴구나 아무것도 변하지 않는다</li>
-                        <li>재규어</li>
-                        <li>사기꾼</li>
-                        <li>권태</li>
-                        <li>착장</li>
-                        <li>주인공</li>
-                        <li>산산조각</li>
-                        <li>저녁</li>
-                        <li>춤을추게, 여전하게 (Dear Sally)</li>
-                    </ul>
-                </li>
-                  
-                <li class="menu3">
-                    <h3>여기서 빛난다</h3>
-                    <img src="./img/album3.jpg">
-                    <ul class="album">
-                        <li>그림자</li>
-                        <li>오직 그곳에서만 빛난다</li>
-                        <li>끈적한 바닥</li>
-                        <li>제자리에 있는건</li>
-                        <li>Get A Grip!</li>
-                    </ul>
-                </li>
-                  
-                <li class="menu4">
-                    <h3>로봇-맨</h3>
-                    <img src="./img/album4.jpg">
-                    <ul class="album">
-                        <li>로봇-맨</li>
-                    </ul>
-                    
-                </li>
-            </ol>
-        </nav>
+
+    <section id="slide">
+
     </section>
 
     <footer class="clear">
         <div class="site">
             <ul>
-                <li><a>인스타<img /></a></li>
-                <li><a>유튜브<img /></a></li>
-                <li><a>트위터<img /></a></li>
-                <li><a>페북<img /></a></li>
-                <li><a>사클<img /></a></li>
+                <li><a><img src="./img/sns1.png" alt="인스타그램"/></a></li>
+                <li><a><img src="./img/sns2.png" alt="유튜브" /></a></li>
+                <li><a><img src="./img/sns3.png" alt="트위터" /></a></li>
+                <li><a><img src="./img/sns4.png" alt="페이스북" /></a></li>
+                <li><a><img src="./img/sns5.png" alt="사운드클라우드" /></a></li>
             </ul>
         </div>
         <div class="footer_content">
